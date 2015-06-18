@@ -1,0 +1,20 @@
+{
+  "name": "gulp-esschema",
+  "description": "Generate JSON Schema from ASTs w/ esschema",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "Dusty Little <dlittle@toyatech.net>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:toyatech/gulp-esschema.git"
+  },
+  "homepage": "https://github.com/toyatech/gulp-esschema/",
+  "bugs": "http://github.com/toyatech/gulp-esschema/issues/",
+  "dependencies": {
+    "esschema": ">= 0.0.2",
+    "through2": ">= 0.4.1",
+  },
+  "keywords": [
+    "gulpplugin", "esprima", "ast", "esschema", "json schema"
+  ]
+}
