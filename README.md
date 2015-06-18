@@ -8,13 +8,13 @@ var gulp    = require('gulp'),
     esprima = require('gulp-esprima'),
     esschema = require('gulp-esschema');
 
-// This task will parse all of the JavaScript files under lib/
-// and save JSON representations of their ASTs (abstract syntax
-// trees) under parsed/
+// This task will use esprima to parse all of the JavaScript files 
+// under schema/, generate and save JSON Schema representations of 
+// their ASTs (abstract syntax trees) under dist/schemas/
 gulp.task('generate', function() {
-  return gulp.src('schemas/*.ess')
-    .pipe(esprima())
-    .pipe(esschema())
+  return gulp.src('schemas/*.js')
+    .pipe(esprima()) // or esprima({ [options] })
+    .pipe(esschema()) // or esschema({ [options] })
     .pipe(gulp.dest('dist/schemas/'));
 });
 ```
